@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# 🛒 EBAC Sports E-Shop - Redux & Hooks Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um projeto de e-commerce esportivo desenvolvido com **React** e **TypeScript**, focado na implementação de funcionalidades de carrinho de compras e sistema de favoritos. A aplicação utiliza uma arquitetura moderna que combina **Redux** para o estado global do carrinho e **Hooks** para o estado local de favoritos.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 📝 Resumo (Resume)
+Neste projeto, explorei a convivência de diferentes fluxos de dados. O carrinho de compras foi gerenciado através do **Redux Toolkit**, permitindo que produtos sejam adicionados de qualquer parte da aplicação. Já a funcionalidade de "favoritar" foi implementada com `useState` e lógica de filtragem dinâmica, demonstrando o domínio sobre manipulação de arrays e imutabilidade no React. A aplicação também consome uma API externa para renderizar a lista de produtos dinamicamente.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Tecnologias e Ferramentas (Tech Stack)
 
-### `npm test`
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Redux](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📋 Funcionalidades em Destaque
+* **Estado Global com Redux:** Centralização da lógica do carrinho de compras, permitindo acesso e modificação do estado de forma previsível e segura.
+* **Sistema de Favoritos Dinâmico:** Implementação de lógica de "toggle" (adicionar/remover) usando `find` e `filter`, garantindo que não existam duplicatas na lista de desejos.
+* **Tipagem com TypeScript:** Definição rigorosa do tipo `Produto`, garantindo que as propriedades `id`, `nome`, `preco` e `imagem` sejam consistentes em toda a aplicação.
+* **Componentização Avançada:** Divisão estratégica entre containers de lógica (`Produtos`) e componentes de exibição (`Header`), utilizando o padrão de *Lifting State Up*.
+* **Estilização com GlobalStyle:** Uso de Styled Components para manter um tema visual unificado e responsivo para toda a loja.
+* **Fetch de API:** Integração com serviços externos para obtenção da lista de produtos em tempo real.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 👨‍💻 Sobre mim (About Me)
+Olá, meu nome é **Kaio**, tenho 22 anos. Como meu foco é o **Back-End com Python**, trabalhar com Redux foi um exercício valioso de arquitetura. No Back-End, lidamos constantemente com o gerenciamento de estados em bancos de dados e sessões; entender como o Front-End espelha esses dados no Redux me permite criar APIs mais eficientes e preparadas para aplicações de grande porte.
 
-### `npm run eject`
+### Entre em contato (Contact me)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=764ABC)](https://linkedin.com/in/kaio-grativol-baldo-071a74150/)
+[![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=764ABC)](https://www.instagram.com/kaiull__/)
+[![GitHub](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=764ABC)](https://github.com/SeuUsuarioAqui)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+*Projeto desenvolvido para consolidar a integração entre Hooks e Redux em aplicações de comércio eletrônico.*
